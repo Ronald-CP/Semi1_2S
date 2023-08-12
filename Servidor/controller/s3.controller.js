@@ -12,8 +12,8 @@ var saveImage = async (req, res) => {
 
   AWS.config.update({
     region: 'us-east-2', // se coloca la region del bucket
-    accessKeyId: 'AKIA4MQPRAC6WLUXSLZJ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
   })
 
   var s3 = new AWS.S3() // se crea una variable que pueda tener acceso a las caracteristicas de S3
@@ -34,8 +34,8 @@ var getImage = async (req, res) => {
 
   AWS.config.update({
     region: 'us-east-2', // se coloca la region del bucket
-    accessKeyId: 'AKIA4MQPRAC6WLUXSLZJ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
   })
 
   var S3 = new AWS.S3()
