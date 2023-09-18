@@ -9,5 +9,9 @@ let aws_keys = {
     accessKeyId: '',
     secretAccessKey: '',
   },
+  cognito: {
+    UserPoolId: '',
+    ClientId: '',
+  },
 }
 module.exports = aws_keys
