@@ -10,6 +10,7 @@ var cognito = require('./routes/cognito.routes.js')
 var app = express()
 
 var s3 = require('./routes/s3.routes.js')
+var lex = require('./routes/lex.routes.js')
 
 // MIDDLEWARES
 app.set('port', 4000)
@@ -25,6 +26,8 @@ app.use('/dynamodb', dynamodb)
 app.use('/rekognition', rekognition)
 app.use('/translate', translate)
 app.use('/cognito', cognito)
+app.use('/lex', lex)
+
 app.use('/', (req, res) => {
   res.send('Bienvenido a la API de AWS')
 })
